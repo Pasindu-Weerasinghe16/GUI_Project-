@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+
+    color: #fff;
+
+}
+
+
+.navbar .logo a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+
+.nav-links li a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+
+}
+
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.nav-actions span {
+    color: #fff;
+
+    font-size: 0.9rem;
+}
+
+
+
+.btn-signin {
+    background-color: transparent;
+    color: #fff;
+
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.btn-signin:hover {
+    background-color: #fff;
+
+    color: #222;
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-actions {
+        justify-content: space-between;
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-item label {
+    margin-bottom: 0.5rem;
+}
+
+.search-item input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-search {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn-search:hover {
+    background-color: #0056b3;
+}
