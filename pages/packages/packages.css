@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+
+}
+
+.package {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-image: url('../../public/photos/signin.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(206, 74, 74);
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.header-title {
+    font-size: 36px;
+    margin: 0;
+}
+
+.header-tagline {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.rating-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.rating {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.reviews {
+    font-size: 16px;
+    color: gray;
+}
+
+.tours {
+    margin-top: 20px;
+}
+
+.tours h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tour-cards_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tour-card-1 {
+    background: white;
+    border-radius: 8px;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 100;
+    text-align: center;
+}
+
+.tour-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.tour-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
