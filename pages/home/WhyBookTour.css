@@ -1,0 +1,168 @@
+/* Main Section */
+.why-book-tour {
+    padding: 2rem;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #03001f; 
+    color: #e0e0e0; 
+  }
+  
+  
+  .why-book-tour h2 {
+    font-size: 2.5rem;
+    color: #f4d03f; 
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+
+  .why-book-tour .description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cfcfcf; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .feature {
+    padding: 1.5rem;
+    background-color: #03043a; 
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .feature .icon {
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  .feature p {
+    color: #cfcfcf;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  
+  .experience {
+    margin-top: 3rem;
+  }
+  
+  .experience-title {
+    font-size: 2rem;
+    color: #f4d03f; 
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  .experience p {
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    margin-bottom: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stats div {
+    text-align: center;
+  }
+  
+  .stats h4 {
+    font-size: 1.8rem;
+    color: #f4d03f;
+    margin-bottom: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  .stats p {
+    font-size: 1rem;
+    color: #cfcfcf;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+  }
+  
+  
+  .rating {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+  }
+  
+  .rating span {
+    font-weight: bold;
+    color: #f4d03f; 
+  }
+  
+  .rating a {
+    color: #f4d03f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .rating a:hover {
+    color: #fff; 
+  }
+  
+  
+  .all-destination {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #f4d03f; 
+    border-radius: 25px;
+    color: #f4d03f; 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .all-destination:hover {
+    background-color: #f4d03f; 
+    color: #1b1b1b; 
+    box-shadow: 0 6px 12px rgba(244, 208, 63, 0.5); 
+    transform: translateY(-3px);
+  }
+  
+  .all-destination:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  
+  
