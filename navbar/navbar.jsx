@@ -26,7 +26,7 @@ const Navbar = () => {
               <li className="dropdown"><a href="#">Packages <RiArrowDropDownLine /> </a>
                 <ul className="dropdown-menu">
                   <li><a href="./packages">Countery-01</a></li>
-                  <li><a href="#">Countery-02</a></li>
+                  <li><a href="/PackageCard">Countery-02</a></li>
                   <li><a href="#">Countery-03</a></li>
                   <li><a href="#">Countery-04</a></li>
                 </ul>

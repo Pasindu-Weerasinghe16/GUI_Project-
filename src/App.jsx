@@ -8,6 +8,7 @@ import SignIn from '../pages/SignIn/SignIn'
 import SignUp from '../pages/SignUp/SignUp'
 import Package from '../pages/packages/packages'
 import PackageCard from './PackageCard/PackageCard'
+import CountryDiscription from './CountryDiscription/CountryDiscription'
 
 // import SignUp from '../pages/SingUp/SingUp'
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/packages" element={<Package />} />
           <Route path="/PackageCard" element={<PackageCard />} />
+          <Route path="/CountryDiscription" element={<CountryDiscription />} />
         </Routes>
       </BrowserRouter>
 
