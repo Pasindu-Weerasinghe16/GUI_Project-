@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css"
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   return (
@@ -20,9 +21,17 @@ const Navbar = () => {
             <ul className="navbar-menu">
               <a href="/"><li>Home</li></a>
               <li>Contact</li>
-              <li>Pages</li>
+
               <li>Destination</li>
-              <a href="/packages"><li>Packages</li></a>
+              <li className="dropdown"><a href="#">Packages <RiArrowDropDownLine /> </a>
+                <ul className="dropdown-menu">
+                  <li><a href="./packages">Countery-01</a></li>
+                  <li><a href="#">Countery-02</a></li>
+                  <li><a href="#">Countery-03</a></li>
+                  <li><a href="#">Countery-04</a></li>
+                </ul>
+              </li>
+
               <li>About</li>
 
             </ul>
