@@ -9,6 +9,7 @@ import SignUp from '../pages/SignUp/SignUp'
 import Package from '../pages/packages/packages'
 import PackageCard from './PackageCard/PackageCard'
 import CountryDiscription from './CountryDiscription/CountryDiscription'
+import CountryDiscription_SriLanka from './CountryDiscription/Sri_lanka'
 
 // import SignUp from '../pages/SingUp/SingUp'
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/packages" element={<Package />} />
           <Route path="/PackageCard" element={<PackageCard />} />
           <Route path="/CountryDiscription" element={<CountryDiscription />} />
+          <Route path="/CountryDiscription_SriLanka" element={<CountryDiscription_SriLanka />} />
         </Routes>
       </BrowserRouter>
 

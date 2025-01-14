@@ -1,0 +1,289 @@
+/* Banner Area */
+.banner-area {
+    height: 75vh;
+    width: 100%;
+    background: linear-gradient(#1c1a2521, #000000ab), url(/photos/Sri_lanka_002.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+
+
+}
+
+
+
+/* Section styles */
+.light {
+    background: #f3f5f7;
+    font-size: 15px;
+}
+
+#pageHeaderTitle {
+    margin: 2rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Postcard styles */
+.postcard {
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    z-index: 100;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.postcard.light {
+    background-color: #e1e5ea;
+}
+
+.postcard .t-dark {
+    color: #18151f;
+}
+
+.postcard a {
+    color: inherit;
+}
+
+.postcard h1,
+.postcard .h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.postcard .small {
+    font-size: 80%;
+}
+
+.postcard .postcard__title {
+    font-size: 1.75rem;
+}
+
+.postcard .postcard__img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.postcard .postcard__img_link {
+    display: contents;
+}
+
+.postcard .postcard__bar {
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+}
+
+.postcard .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+}
+
+.postcard .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.postcard .postcard__tagbox .tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.postcard .postcard__tagbox .tag__item:hover {
+    background: rgba(83, 83, 83, 0.8);
+}
+
+.postcard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.postcard:hover .postcard__bar {
+    width: 100px;
+}
+
+.green .postcard__title:hover {
+    color: #79dd09;
+}
+
+.green .postcard__bar {
+    background-color: #79dd09;
+}
+
+.green::before {
+    background-image: linear-gradient(-30deg, rgba(121, 221, 9, 0.1), transparent 50%);
+}
+
+.blue .postcard__title:hover {
+    color: #0076bd;
+}
+
+.blue .postcard__bar {
+    background-color: #0076bd;
+}
+
+.blue::before {
+    background-image: linear-gradient(-30deg, rgba(0, 118, 189, 0.1), transparent 50%);
+}
+
+.red .postcard__title:hover {
+    color: #bd150b;
+}
+
+.red .postcard__bar {
+    background-color: #bd150b;
+}
+
+.red::before {
+    background-image: linear-gradient(-30deg, rgba(189, 21, 11, 0.1), transparent 50%);
+}
+
+.yellow .postcard__title:hover {
+    color: #bdbb49;
+}
+
+.yellow .postcard__bar {
+    background-color: #bdbb49;
+}
+
+.yellow::before {
+    background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
+}
+
+/* Scroller to top */
+.to-top {
+    background: rgb(22, 21, 25);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 1200px) {
+    .header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+        scroll-padding-top: 7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: fixed;
+        top: 0;
+        left: -110%;
+        background: #fff;
+        z-index: 10000;
+        width: 35rem;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .navbar.active {
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+
+    .header .navbar a {
+        margin: 1rem 0;
+        font-size: 3rem;
+    }
+
+    .header .navbar #nav-close {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    .to-top {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .row {
+        width: 325px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
