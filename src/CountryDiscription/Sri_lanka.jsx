@@ -1,9 +1,9 @@
 import React from "react";
 import "./Sri_Lanka.css";
 import imgS1 from '../../public/photos/Sri_Lanka_00.jpg';
-import img2 from '../../public/photos/France_02.webp';
-import img3 from '../../public/photos/Franch_03.jpeg';
-import img4 from '../../public/photos/Franch_04.jpeg';
+import imgS2 from '../../public/photos/Sri_lanka_01.jpg';
+import imgS3 from '../../public/photos/Sri_Lanaka_02.jpg';
+import imgS4 from '../../public/photos/Sri_lanka_03.jpg';
 const CountryDiscription_SriLanka = () => {
     return (
         <>
@@ -29,7 +29,7 @@ const CountryDiscription_SriLanka = () => {
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">Eiffel Tower</a>
+                                <a>Lion Rock</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="202-01-14 12:00:00">
@@ -38,8 +38,40 @@ const CountryDiscription_SriLanka = () => {
                             </div>
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">
-                                The Eiffel Tower, located in Paris, France, is a 330 m (1,083 ft) tall iron structure that has become a global cultural icon of France and a world-renowned landmark. Completed in 1889, it was initially the tallest man-made structure in the world until 1930. As of today, the Eiffel Tower remains a prominent symbol of architectural brilliance and innovation. It is the most-visited paid monument in the world, attracting millions of visitors annually. The tower serves as a popular observation point, a historical monument, and a venue for various cultural and entertainment events, embodying Paris's charm and legacy.
+                                Lion Rock, famously known as Sigiriya, is an iconic ancient fortress located in the Matale District of Sri Lanka. Rising 200 meters (660 ft) above the surrounding plains, this UNESCO World Heritage Site is a masterpiece of urban planning and artistry. Constructed in the 5th century AD by King Kashyapa, the site features remarkable frescoes, beautifully landscaped gardens, and a massive pair of lion’s paws carved into the rock's base, which give it its name.
+
+                                Sigiriya served as a royal palace and later as a Buddhist monastery. Visitors can ascend the rock via a series of steps and pathways, leading to breathtaking views and the ruins of the ancient palace at the summit. It stands today as a symbol of Sri Lanka’s rich cultural heritage and attracts travelers from around the world.</div>
+                            <ul className="postcard__tagbox">
+                                <li className="tag__item">
+                                    <i className="fa fa-compass" aria-hidden="true"></i> Book Now
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+
+                    <article className="postcard light blue" id="lotus">
+                        <a className="postcard__img_link" href="#">
+                            <img style={{ backgroundAttachment: "fixed" }}
+                                className="postcard__img"
+                                src={imgS2}
+                                alt="Lotus Tower"
+                            />
+                        </a>
+                        <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
+                            <h1 className="postcard__title blue">
+                                <a>Galle Fort</a>
+                            </h1>
+                            <div className="postcard__subtitle small">
+                                <time dateTime="2022-12-25 12:00:00">
+                                    <i className="fas fa-calendar-alt mr-2"></i>Tue, January 14th 2025
+                                </time>
                             </div>
+                            <div className="postcard__bar"></div>
+                            <div className="postcard__preview-txt">
+                                Galle Fort, located in the city of Galle on the southern coast of Sri Lanka, is a historic fortress with roots dating back to the 16th century. Built initially by the Portuguese and extensively fortified by the Dutch in the 17th century, it is now a UNESCO World Heritage Site. This iconic structure showcases a blend of European architectural styles infused with South Asian traditions.
+
+                                The fort encompasses cobblestone streets, colonial-era buildings, museums, boutique hotels, and quaint cafes, offering a glimpse into Sri Lanka's colonial history. Key attractions include the Galle Lighthouse, the Dutch Reformed Church, and the iconic fort walls, which provide panoramic views of the Indian Ocean. Galle Fort remains a vibrant cultural hub, celebrated for its historical significance, charming ambiance, and artistic community.</div>
                             <ul className="postcard__tagbox">
                                 <li className="tag__item">
                                     <i className="fa fa-compass" aria-hidden="true"></i> Book Now
@@ -53,13 +85,13 @@ const CountryDiscription_SriLanka = () => {
                         <a className="postcard__img_link" href="#">
                             <img
                                 className="postcard__img"
-                                src={img2}
+                                src={imgS3}
                                 alt="Lotus Tower"
                             />
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">Mont Saint-Michel</a>
+                                <a>Nine Arches Bridge</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="2022-12-25 12:00:00">
@@ -68,37 +100,9 @@ const CountryDiscription_SriLanka = () => {
                             </div>
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">
-                                Mont-Saint-Michel, located in Normandy, France, is a breathtaking island commune rising 92 meters (302 ft) above sea level. Known for its striking medieval architecture, the island is crowned by the Mont-Saint-Michel Abbey, a UNESCO World Heritage Site. This iconic structure dates back to the 8th century and has served as a pilgrimage site, monastery, and fortress. Surrounded by tidal waters, Mont-Saint-Michel transforms from an island at high tide to accessible land at low tide, adding to its mystical allure. Today, it stands as a symbol of French heritage, attracting millions of visitors annually with its historical, religious, and architectural significance.
-                            </div>
-                            <ul className="postcard__tagbox">
-                                <li className="tag__item">
-                                    <i className="fa fa-compass" aria-hidden="true"></i> Book Now
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
+                                The Nine Arches Bridge, also known as the Bridge in the Sky, is a stunning viaduct located in Ella, Sri Lanka. Built during the British colonial era in the early 20th century, this iconic railway bridge is a marvel of engineering, constructed entirely of stone and brick without the use of steel. Spanning 91 meters (300 ft) in length and rising 24 meters (80 ft) above the dense jungle below, the bridge features nine graceful arches that create a picturesque sight.
 
-
-                    <article className="postcard light blue" id="lotus">
-                        <a className="postcard__img_link" href="#">
-                            <img
-                                className="postcard__img"
-                                src={img3}
-                                alt="Lotus Tower"
-                            />
-                        </a>
-                        <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
-                            <h1 className="postcard__title blue">
-                                <a href="#">French Alps</a>
-                            </h1>
-                            <div className="postcard__subtitle small">
-                                <time dateTime="2022-12-25 12:00:00">
-                                    <i className="fas fa-calendar-alt mr-2"></i>Tue, January 14th 2025
-                                </time>
-                            </div>
-                            <div className="postcard__bar"></div>
-                            <div className="postcard__preview-txt">
-                                If your ideal French vacation involves a little more nature and a little less city, head to the French Alps. Here, you'll find some of the best ski slopes in Europe, as well as beautiful scenery that rivals any work of art or architecture. In summer, the typically snow-covered mountains thaw just enough to create perfect conditions for hiking and biking. Enchanting villages sit at the base of the range, offering several places to unwind when you've had enough fun on the slopes or trails.</div>
+                                Surrounded by lush greenery and tea plantations, the Nine Arches Bridge is a popular destination for travelers seeking scenic views and a touch of history. The sight of a train crossing the bridge, framed by the misty mountains, is a quintessential image of Sri Lanka's hill country. It is a testament to the country's rich heritage and natural beauty.  </div>
                             <ul className="postcard__tagbox">
                                 <li className="tag__item">
                                     <i className="fa fa-compass" aria-hidden="true"></i> Book Now
@@ -113,13 +117,13 @@ const CountryDiscription_SriLanka = () => {
                         <a className="postcard__img_link" href="#">
                             <img
                                 className="postcard__img"
-                                src={img4}
+                                src={imgS4}
                                 alt="Lotus Tower"
                             />
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">Montpellier</a>
+                                <a>Mirissa Beach</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="2022-12-25 12:00:00">
@@ -128,7 +132,11 @@ const CountryDiscription_SriLanka = () => {
                             </div>
                             <div className="postcard__bar"></div>
                             <div className="postcard__preview-txt">
-                                Montpellier, located in southern France near the Mediterranean coast, is a vibrant city known for its rich history, cultural diversity, and youthful energy. As the capital of the Hérault department, it is a hub for education, art, and innovation, boasting one of the oldest universities in the world, the University of Montpellier, founded in 1220. The city’s charm is enhanced by its blend of medieval architecture and modern urban design, with landmarks like the Place de la Comédie, the Arc de Triomphe, and the Saint-Pierre Cathedral. Montpellier’s Mediterranean climate, lively festivals, and proximity to beaches make it a favorite destination for both locals and tourists.</div>
+                                Mirissa Beach, located on the southern coast of Sri Lanka, is a tropical paradise renowned for its golden sands, turquoise waters, and laid-back atmosphere. This crescent-shaped beach is a favorite destination for both locals and tourists, offering the perfect blend of relaxation and adventure.
+
+                                Mirissa is particularly famous for its whale and dolphin watching tours, as it is one of the best locations in the world to spot blue whales. The beach also offers opportunities for snorkeling, surfing, and paddleboarding. The iconic Parrot Rock, a small rocky islet accessible during low tide, provides stunning panoramic views of the coastline.
+
+                                With its beachfront cafes, vibrant nightlife, and tranquil charm, Mirissa Beach is an ideal getaway for anyone looking to experience the natural beauty and hospitality of Sri Lanka. </div>
                             <ul className="postcard__tagbox">
                                 <li className="tag__item">
                                     <i className="fa fa-compass" aria-hidden="true"></i> Book Now
