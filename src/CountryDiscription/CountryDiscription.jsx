@@ -7,7 +7,7 @@ const CountryDiscription = () => {
         <>
 
             <div className="banner-area">
-                <img src={imgtest2} />
+
             </div >
             {/* Blog Section */}
             < section className="light" >
