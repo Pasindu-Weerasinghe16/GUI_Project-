@@ -7,6 +7,7 @@ import { Routes, Route, BrowserRouter } from 'react-router'
 import SignIn from '../pages/SignIn/SignIn'
 import SignUp from '../pages/SignUp/SignUp'
 import Package from '../pages/packages/packages'
+import PackageCard from './PackageCard/PackageCard'
 
 // import SignUp from '../pages/SingUp/SingUp'
 
@@ -24,7 +25,7 @@ function App() {
           <Route path="/SignIn" element={<SignIn />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/packages" element={<Package />} />
-
+          <Route path="/PackageCard" element={<PackageCard />} />
         </Routes>
       </BrowserRouter>
 

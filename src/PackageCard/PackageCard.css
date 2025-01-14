@@ -1,0 +1,171 @@
+/* Container Styling */
+.packages-container {
+    display: relative;
+    align-items: flex-start;
+    border: 1px solid #080808;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #b4b3ce;
+    box-shadow: 0 2px 8px rgba(220, 196, 196, 0.1);
+    margin-top: 3cm;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: #000000 0px 0px 3px;
+
+}
+
+/* Carousel Section */
+.carousel-container {
+    flex: 1;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    /* height: 300px; */
+    object-fit: cover;
+    border-color: #000000;
+    box-shadow: #000000 0px 0px 3px;
+    border-radius: 5px;
+
+
+}
+
+.carousel img:hover {
+    transform: scale(1.01);
+    transition: transform 0.5s;
+}
+
+.fav-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.package-naming-container {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 30px 0 30px;
+}
+
+/* Package Details Section */
+.package-details {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Package Name Styling */
+.package-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.package-name a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Seller and Duration Styling */
+.package-seller-duration {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Itinerary Styling */
+.package-destination-itenary {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Package Inclusions Section */
+.package-inclusions ul {
+    display: flex;
+    gap: 15px;
+    /* margin-bottom: 20px; */
+    list-style: none;
+    padding: 0;
+}
+
+.package-inclusions li {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+
+
+
+.package-inclusions .icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+/* Pricing Section */
+.package-price-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 300px;
+
+    gap: 10px;
+}
+
+.details-btn {
+    margin-top: 100px;
+    margin-bottom: 12px;
+}
+
+
+
+.final-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.twin {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #b70a10;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+
+}
+
+.btn-primary:hover {
+    background-color: #b70a10;
+}
+
+/* Earn eCash Section */
+.ecash {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
