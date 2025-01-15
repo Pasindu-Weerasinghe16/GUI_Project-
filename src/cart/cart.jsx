@@ -48,10 +48,10 @@ const Cart = ({ cartItems, setCartItems }) => {
                 <div className="cart-items">
                     {cartItems.map((item) => (
                         <div className="cart-item" key={item.id}>
-                            <img src={item.imgSrc} alt={item.name} className="item-image" />
+                            <img src={item.imgSrc} alt={item.title} className="item-image" />
                             <div className="item-details">
-                                <h2>{item.name}</h2>
-                                <p>{item.details}</p>
+                                <h2>{item.title}</h2>
+                                <p>{item.destinations}</p>
                                 <p className="item-price">₹{item.price.toLocaleString()}</p>
                             </div>
                             <div className="item-actions">
@@ -83,7 +83,7 @@ const Cart = ({ cartItems, setCartItems }) => {
                         <p>₹{grandTotal.toLocaleString()}</p>
                     </div>
                     <button className="checkout-button" onClick={() => navigate("/SuccessPage")}>Check Out</button>
-                    <button className="add-item-button" onClick={addItemToCart}>
+                    <button className="add-item-button" onClick={() => navigate("/packages")}>
                         Add New Item to Cart
                     </button>
                     <p className="free-shipping">Congrats, you're eligible for <b>Free Shipping</b></p>

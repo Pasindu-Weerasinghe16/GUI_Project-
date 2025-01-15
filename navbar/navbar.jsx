@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css"
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -42,7 +43,7 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              <li><a href="/cart">About</a></li>
+              <li><Link to="/cart">About</Link></li>
 
             </ul>
 

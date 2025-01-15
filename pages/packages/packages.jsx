@@ -1,15 +1,17 @@
 import React from "react";
 import "./packages.css";
 import PackageCard from "../../src/PackageCard/PackageCard";
+import { useNavigate } from "react-router";
 
-const Package = () => {
+const Package = ({ addToCart }) => {
+    const navigate = useNavigate();
     const packageData = [
         {
             id: 1,
             title: "Berlin And Prague - Yatra Special",
             duration: "4 Nights / 5 Days",
             destinations: "Berlin (2N) → Prague (2N)",
-            price: "₹50,990",
+            price: 50990,
             ecash: "₹1,529",
             imgSrc: "/photos/adventure.jpg",
         },
@@ -18,7 +20,7 @@ const Package = () => {
             title: "Paris And Rome - Exclusive",
             duration: "5 Nights / 6 Days",
             destinations: "Paris (3N) → Rome (2N)",
-            price: "₹70,450",
+            price: 70450,
             ecash: "₹2,149",
             imgSrc: "/photos/cultural.jpg",
         },
@@ -27,7 +29,7 @@ const Package = () => {
             title: "Tokyo and Kyoto - Premium",
             duration: "6 Nights / 7 Days",
             destinations: "Tokyo (3N) → Kyoto (3N)",
-            price: "₹1,20,000",
+            price: 120000,
             ecash: "₹3,500",
             imgSrc: "/photos/japan.jpg",
         },
@@ -36,7 +38,7 @@ const Package = () => {
             title: "Swiss Alps Adventure",
             duration: "7 Nights / 8 Days",
             destinations: "Zurich (4N) → Interlaken (3N)",
-            price: "₹1,50,000",
+            price: 150000,
             ecash: "₹4,000",
             imgSrc: "/photos/swiss.jpg",
         },
@@ -61,6 +63,7 @@ const Package = () => {
                             price={pkg.price}
                             ecash={pkg.ecash}
                             imgSrc={pkg.imgSrc}
+                            onAddToCart={() => { addToCart(pkg); navigate("/cart") }}
                         />
                     ))}
                 </div>

@@ -4,7 +4,7 @@ import { RiSearchLine } from "react-icons/ri";
 import { FaUtensils, FaHotel, FaBus, FaBinoculars } from "react-icons/fa"; // Import icons
 import imgtemp from "../../public/photos/adventure.jpg";
 
-const PackageCard = () => {
+const PackageCard = ({ onAddToCart }) => {
     return (
         <div className="packages-container">
             <div className="carousel-container">
@@ -71,7 +71,7 @@ const PackageCard = () => {
                     <p className="final-price">
                         ₹50,990 <span className="twin">Per Person on twin sharing</span>
                     </p>
-                    <button className="btn btn-primary details-btn">View Details</button>
+                    <button className="btn btn-primary details-btn" onClick={() => onAddToCart()}>View Details</button>
                     <p className="ecash">Earn eCash ₹1,529</p>
                 </div>
             </div>
