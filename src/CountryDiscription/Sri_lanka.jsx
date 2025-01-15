@@ -8,7 +8,7 @@ const CountryDiscription_SriLanka = () => {
     return (
         <>
 
-            <div className="banner-area">
+            <div className="banner-area2">
 
             </div >
             {/* Blog Section */}

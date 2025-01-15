@@ -22,7 +22,17 @@ const Navbar = () => {
               <a href="/"><li>Home</li></a>
               <li>Contact</li>
 
-              <li>Destination</li>
+
+              <li className="dropdown"><a href="#">Destination <RiArrowDropDownLine /> </a>
+                <ul className="dropdown-menu">
+                  <li><a href="./CountryDiscription">France</a></li>
+                  <li><a href="/CountryDiscription_SriLanka">Sri Lanka</a></li>
+                  <li><a href="#">Countery-03</a></li>
+                  <li><a href="#">Countery-04</a></li>
+                </ul>
+              </li>
+
+
               <li className="dropdown"><a href="#">Packages <RiArrowDropDownLine /> </a>
                 <ul className="dropdown-menu">
                   <li><a href="./packages">Countery-01</a></li>

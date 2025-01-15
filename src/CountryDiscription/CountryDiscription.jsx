@@ -29,7 +29,7 @@ const CountryDiscription = () => {
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">Eiffel Tower</a>
+                                <a>Eiffel Tower</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="202-01-14 12:00:00">
@@ -59,7 +59,7 @@ const CountryDiscription = () => {
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">Mont Saint-Michel</a>
+                                <a>Mont Saint-Michel</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="2022-12-25 12:00:00">
@@ -89,7 +89,7 @@ const CountryDiscription = () => {
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">French Alps</a>
+                                <a>French Alps</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="2022-12-25 12:00:00">
@@ -119,7 +119,7 @@ const CountryDiscription = () => {
                         </a>
                         <div className="postcard__text t-dark" style={{ paddingRight: "40px" }}>
                             <h1 className="postcard__title blue">
-                                <a href="#">Montpellier</a>
+                                <a>Montpellier</a>
                             </h1>
                             <div className="postcard__subtitle small">
                                 <time dateTime="2022-12-25 12:00:00">

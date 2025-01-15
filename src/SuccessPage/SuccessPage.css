@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.success-page {
+    padding: 0;
+}
+
+/* Fixed Background Section */
+.success-background {
+    background: url('/photos/success-background.jpg') no-repeat center center/cover;
+    height: 250px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.success-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+/* Order Details Section */
+.order-details-container {
+    max-width: 1200px;
+    margin: -50px auto 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item-image {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.order-item-info {
+    flex: 2;
+}
+
+.order-item-info h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.order-item-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.order-item-price {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.order-item-total {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-summary {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.order-summary p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-message h2 {
+    font-size: 24px;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    font-size: 16px;
+    color: #666;
+}

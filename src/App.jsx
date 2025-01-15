@@ -10,6 +10,8 @@ import Package from '../pages/packages/packages'
 import PackageCard from './PackageCard/PackageCard'
 import CountryDiscription from './CountryDiscription/CountryDiscription'
 import CountryDiscription_SriLanka from './CountryDiscription/Sri_lanka'
+import Cart from './cart/cart'
+import SuccessPage from './SuccessPage/SuccessPage'
 
 // import SignUp from '../pages/SingUp/SingUp'
 
@@ -30,6 +32,8 @@ function App() {
           <Route path="/PackageCard" element={<PackageCard />} />
           <Route path="/CountryDiscription" element={<CountryDiscription />} />
           <Route path="/CountryDiscription_SriLanka" element={<CountryDiscription_SriLanka />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/SuccessPage" element={<SuccessPage orderDetails={[]} />} />
         </Routes>
       </BrowserRouter>
 
