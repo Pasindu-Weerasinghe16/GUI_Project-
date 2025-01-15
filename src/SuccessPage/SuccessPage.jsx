@@ -2,6 +2,10 @@ import React from "react";
 import "./SuccessPage.css";
 
 const SuccessPage = ({ orderDetails }) => {
+    const subtotal = orderDetails.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const salesTax = (subtotal * 0.1).toFixed(2); // Example 10% tax
+    const grandTotal = (subtotal + parseFloat(salesTax)).toFixed(2);
+
     return (
         <div className="success-page">
             {/* Fixed Background Section */}
@@ -13,7 +17,7 @@ const SuccessPage = ({ orderDetails }) => {
             <div className="order-details-container">
                 <h2 className="order-heading">Order Details</h2>
                 <div className="order-details">
-                    {orderDetails.items.map((item, index) => (
+                    {orderDetails.map((item, index) => (
                         <div className="order-item" key={index}>
                             <img src={item.imgSrc} alt={item.name} className="order-item-image" />
                             <div className="order-item-info">
@@ -28,9 +32,9 @@ const SuccessPage = ({ orderDetails }) => {
                     ))}
                 </div>
                 <div className="order-summary">
-                    <p><strong>Subtotal:</strong> ₹{orderDetails.subtotal.toLocaleString()}</p>
-                    <p><strong>Sales Tax:</strong> ₹{orderDetails.salesTax}</p>
-                    <p><strong>Grand Total:</strong> ₹{orderDetails.grandTotal.toLocaleString()}</p>
+                    <p><strong>Subtotal:</strong> ₹{subtotal}</p>
+                    <p><strong>Sales Tax:</strong> ₹{salesTax}</p>
+                    <p><strong>Grand Total:</strong> ₹{grandTotal}</p>
                 </div>
             </div>
 

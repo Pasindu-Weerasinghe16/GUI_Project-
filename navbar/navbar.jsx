@@ -42,7 +42,7 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              <li>About</li>
+              <li><a href="/cart">About</a></li>
 
             </ul>
 

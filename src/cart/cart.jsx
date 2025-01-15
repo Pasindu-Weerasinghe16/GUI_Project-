@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import "./Cart.css";
+import { useNavigate } from "react-router";
 
-const Cart = () => {
-    const [cartItems, setCartItems] = useState([
-        {
-            id: 1,
-            name: "Explore Berlin to Copenhagen - Yatra Special",
-            details: "Berlin (2N) → Copenhagen (2N)",
-            price: 66490,
-            quantity: 1,
-            imgSrc: "/photos/adventure.jpg",
-        },
-        {
-            id: 2,
-            name: "London Special",
-            details: "London (4N)",
-            price: 140990,
-            quantity: 1,
-            imgSrc: "/photos/london.jpg",
-        },
-    ]);
+const Cart = ({ cartItems, setCartItems }) => {
+
 
     const addItemToCart = () => {
         const newItem = {
@@ -50,7 +34,7 @@ const Cart = () => {
     const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
     const salesTax = (subtotal * 0.1).toFixed(2); // Example 10% tax
     const grandTotal = (subtotal + parseFloat(salesTax)).toFixed(2);
-
+    const navigate = useNavigate();
     return (
         <div className="cart-page">
             {/* Fixed Background Section */}
@@ -98,7 +82,7 @@ const Cart = () => {
                         <p>Grand Total:</p>
                         <p>₹{grandTotal.toLocaleString()}</p>
                     </div>
-                    <button className="checkout-button">Check Out</button>
+                    <button className="checkout-button" onClick={() => navigate("/SuccessPage")}>Check Out</button>
                     <button className="add-item-button" onClick={addItemToCart}>
                         Add New Item to Cart
                     </button>

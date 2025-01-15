@@ -16,6 +16,24 @@ import SuccessPage from './SuccessPage/SuccessPage'
 // import SignUp from '../pages/SingUp/SingUp'
 
 function App() {
+  const [cartItems, setCartItems] = useState([
+    {
+      id: 1,
+      name: "Explore Berlin to Copenhagen - Yatra Special",
+      details: "Berlin (2N) → Copenhagen (2N)",
+      price: 66490,
+      quantity: 1,
+      imgSrc: "/photos/adventure.jpg",
+    },
+    {
+      id: 2,
+      name: "London Special",
+      details: "London (4N)",
+      price: 140990,
+      quantity: 1,
+      imgSrc: "/photos/london.jpg",
+    },
+  ]);
 
 
   return (
@@ -32,8 +50,8 @@ function App() {
           <Route path="/PackageCard" element={<PackageCard />} />
           <Route path="/CountryDiscription" element={<CountryDiscription />} />
           <Route path="/CountryDiscription_SriLanka" element={<CountryDiscription_SriLanka />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/SuccessPage" element={<SuccessPage orderDetails={[]} />} />
+          <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
+          <Route path="/SuccessPage" element={<SuccessPage orderDetails={cartItems} />} />
         </Routes>
       </BrowserRouter>
 
