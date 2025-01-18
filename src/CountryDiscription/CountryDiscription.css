@@ -69,6 +69,8 @@
     width: 100%;
     object-fit: cover;
     position: relative;
+
+
 }
 
 .postcard .postcard__img_link {
@@ -186,7 +188,7 @@
     background-image: linear-gradient(-30deg, rgba(189, 187, 73, 0.1), transparent 50%);
 }
 
-/* Scroller to top */
+
 .to-top {
     background: rgb(22, 21, 25);
     position: fixed;
@@ -213,7 +215,7 @@
     opacity: 1;
 }
 
-/* Mobile responsive adjustments */
+
 @media (max-width: 1200px) {
     .header {
         padding: 2rem;

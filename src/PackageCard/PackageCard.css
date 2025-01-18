@@ -1,6 +1,4 @@
 .packages-container {
-
-
     display: relative;
     align-items: flex-start;
     border: 1px solid #080808;
@@ -30,12 +28,15 @@
 }
 
 .carousel img {
-    width: 100%;
+    width: 167px;
+    height: 307px;
     margin: 1px;
     object-fit: cover;
-    border-color: #000000;
+    border-color: #ffffff;
     box-shadow: #000000 0px 0px 3px;
     border-radius: 5px;
+
+
 
 
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./PackageCard.css";
 import { RiSearchLine } from "react-icons/ri";
-import { FaUtensils, FaHotel, FaBus, FaBinoculars } from "react-icons/fa"; // Import icons
+import { FaUtensils, FaHotel, FaBus, FaBinoculars } from "react-icons/fa";
 import imgtemp from "../../public/photos/adventure.jpg";
 
 const PackageCard = ({ onAddToCart }) => {

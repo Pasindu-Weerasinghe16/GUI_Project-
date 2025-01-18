@@ -11,14 +11,14 @@ const CountryDiscription = () => {
             <div className="banner-area">
 
             </div >
-            {/* Blog Section */}
+
             < section className="light" >
                 <div className="container py-2">
                     <div className="h1 text-center text-dark pb-4" id="pageHeaderTitle">
                         Welcome To <span><i style={{ color: "red" }}>France</i></span>
                     </div>
 
-                    {/* Post: Lotus Tower */}
+
                     <article className="postcard light blue" id="lotus">
                         <a className="postcard__img_link" href="#">
                             <img
@@ -138,11 +138,10 @@ const CountryDiscription = () => {
                     </article>
 
 
-                    {/* Repeat similar blocks for other articles */}
+
 
                 </div>
             </section >
-            {/* Scroll to Top */}
             < a href="#top" className="to-top" >
                 <i className="fas fa-chevron-up"></i>
             </a >

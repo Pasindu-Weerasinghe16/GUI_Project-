@@ -3,17 +3,17 @@ import "./SuccessPage.css";
 
 const SuccessPage = ({ orderDetails }) => {
     const subtotal = orderDetails.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    const salesTax = (subtotal * 0.1).toFixed(2); // Example 10% tax
+    const salesTax = (subtotal * 0.1).toFixed(2);
     const grandTotal = (subtotal + parseFloat(salesTax)).toFixed(2);
 
     return (
         <div className="success-page">
-            {/* Fixed Background Section */}
+
             <div className="success-background">
                 <h1 className="success-title">Thank You for Your Purchase!</h1>
             </div>
 
-            {/* Order Details Section */}
+
             <div className="order-details-container">
                 <h2 className="order-heading">Order Details</h2>
                 <div className="order-details">
@@ -38,7 +38,7 @@ const SuccessPage = ({ orderDetails }) => {
                 </div>
             </div>
 
-            {/* Success Message */}
+
             <div className="success-message">
                 <h2>Your trip is booked successfully!</h2>
                 <p>We have sent the details to your email. Have a great journey!</p>

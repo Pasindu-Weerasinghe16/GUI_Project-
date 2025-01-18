@@ -1,14 +1,48 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+        background-color: #ff4d4d;
+    }
+
+    100% {
+        transform: scale(1.2);
+        background-color: #e60000;
+    }
+}
+
 .offers-section {
     padding: 2rem;
     text-align: center;
     font-family: Arial, sans-serif;
-    background-color:#03001f; /* Blue-gray background for elegance */
+    background-color: #ffffff;
 }
 
 .offers-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #f4d03f; /* Gold color for premium feel */
+    color: #ffcccc;
 }
 
 .offers-container {
@@ -30,18 +64,20 @@
 
 .offer-card {
     flex: 0 0 300px;
-    height: 450px;letter-spacing: normal;
-    border: 1px solid #000000; /* Subtle border with blue-gray tone */
+    height: 450px;
+    border: 1px solid #990000;
     border-radius: 8px;
     text-align: center;
-    background-color: #03043a; /* Deep blue-gray for cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    background-color: #330000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .offer-card:hover {
     transform: scale(1.05);
-    background-color: #00080f; 
+    background-color: #4d0000;
+
 }
 
 .offer-card img {
@@ -49,62 +85,61 @@
     height: 300px;
     border-radius: 8px 8px 0 0;
     object-fit: cover;
-    z-index: -1;
-    
 }
 
 .icon {
-   
     width: 60px;
     height: 60px;
     margin: -30px auto 10px;
-    background-color: #f4d03f; /* Gold for icon background */
-    border: 2px solid #ffffff; /* Clean white border */
+    background-color: #ff9999;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-    z-index: 1000;
-    color: #1b263b; /* Dark blue-gray for icon content */
     font-size: 1.5rem;
+    color: #660000;
     margin-top: 0.7cm;
 }
 
 .icon:hover {
-    background-color: #ffcc00; /* Bright gold on hover */
-    color: #ffffff; /* White for contrast */
-    border-color: #ffcc00;
+    background-color: #ff6666;
+    color: #ffffff;
+    border-color: #ff6666;
 }
 
 .offer-card h3 {
     font-size: 1.2rem;
     margin: 1rem 0;
-    color: #e0e0e0; /* Light gray text for better readability */
+    color: #ffe6e6;
+
 }
+
 
 .scroll-btn {
     position: relative;
     top: 50%;
-    
-    background: #f4d03f; /* Gold for scroll buttons */
+    background: #ff4d4d;
     border: none;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     cursor: pointer;
     font-size: 1.5rem;
-    color: #1b263b; /* Blue-gray for text content */
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background 0.3s ease, transform 0.2s ease;
+    animation: buttonHover 0.5s ease-in-out infinite alternate;
+
 }
 
 .scroll-btn:hover {
-    background: #ffcc00; /* Brighter gold on hover */
-    color: #ffffff; /* White text for better contrast */
-    transform: scale(1.2); /* Enlarged on hover */
+    background: #e60000;
+    color: #ffffff;
+    transform: scale(1.2);
 }
 
 .left-btn {
@@ -115,11 +150,12 @@
     right: -20px;
 }
 
+
 .Text_01 {
     text-align: center;
     padding-bottom: 1em;
     font-family: Arial, sans-serif;
-    color: #f4d03f; /* Gold text for premium feel */
+    color: #ffcccc;
     position: relative;
     font-size: 30px;
 }
@@ -129,15 +165,18 @@
     font-weight: 200;
     margin: 0;
     line-height: 1.2;
-    color: #ffcc00; /* Bright gold for the header */
+    color: #ff4d4d;
     position: relative;
+    animation: slideIn 1s ease-out;
+
 }
 
 .Text_01 h2 span {
     font-weight: 300;
     word-spacing: 3px;
     line-height: 1.5em;
-    color: rgba(255, 204, 0, 0.8); /* Soft gold for emphasis */
+    color: rgba(255, 77, 77, 0.8);
+
 }
 
 .Text_01 h2:before {
@@ -148,12 +187,12 @@
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background-color: #f4d03f; /* Gold line for premium styling */
+    background-color: #ff9999;
     border-radius: 3px;
 }
 
 .offer-card h3 {
-    color: #e0e0e0; /* Light gray for headings */
+    color: #ffe6e6;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
 }
