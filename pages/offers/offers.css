@@ -1,198 +1,246 @@
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes buttonHover {
-    0% {
-        transform: scale(1);
-        background-color: #ff4d4d;
-    }
-
-    100% {
-        transform: scale(1.2);
-        background-color: #e60000;
-    }
+/* Offers.css */
+:root {
+    --primary: #4ECDC4;
+    --secondary: #2A3A4F;
+    --accent: #FF6B6B;
 }
 
 .offers-section {
-    padding: 2rem;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    padding: 6rem 2rem;
+    background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
 }
 
-.offers-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #ffcccc;
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.section-title span {
+    position: relative;
+    background: linear-gradient(45deg, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textShine 8s linear infinite;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .offers-container {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .scrollable {
     display: flex;
     overflow-x: auto;
-    gap: 1rem;
     scroll-behavior: smooth;
-    padding: 1rem 0;
-    max-width: 100%;
-    overflow: hidden;
+    padding: 2rem 0;
+    gap: 2rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none;
 }
 
 .offer-card {
-    flex: 0 0 300px;
-    height: 450px;
-    border: 1px solid #990000;
-    border-radius: 8px;
-    text-align: center;
-    background-color: #330000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    animation: fadeIn 0.8s ease-in-out;
+    flex: 0 0 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: cardEntrance 0.6s ease-out forwards;
+    opacity: 0;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.offer-card:hover {
-    transform: scale(1.05);
-    background-color: #4d0000;
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(50px) rotateX(-30deg);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
 }
 
-.offer-card img {
+.card-image {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-image img {
     width: 100%;
-    height: 300px;
-    border-radius: 8px 8px 0 0;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.icon {
-    width: 60px;
-    height: 60px;
-    margin: -30px auto 10px;
-    background-color: #ff9999;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0.8;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    color: white;
+    transform: translateZ(30px);
+}
+
+.card-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.explore-btn {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1.5rem;
-    color: #660000;
-    margin-top: 0.7cm;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.icon:hover {
-    background-color: #ff6666;
-    color: #ffffff;
-    border-color: #ff6666;
+.explore-btn:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
 }
-
-.offer-card h3 {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    color: #ffe6e6;
-
-}
-
 
 .scroll-btn {
-    position: relative;
+    position: absolute;
     top: 50%;
-    background: #ff4d4d;
-    border: none;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    background: var(--primary);
+    border: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    color: #ffffff;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s ease, transform 0.2s ease;
-    animation: buttonHover 0.5s ease-in-out infinite alternate;
-
+    box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
 }
 
 .scroll-btn:hover {
-    background: #e60000;
-    color: #ffffff;
-    transform: scale(1.2);
+    background: var(--secondary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-width: 3px 3px 0 0;
+    transform: rotate(45deg);
 }
 
 .left-btn {
-    left: -20px;
+    left: -30px;
+    z-index: 1;
+}
+
+.left-btn .arrow {
+    transform: rotate(-135deg);
+    margin-left: 5px;
 }
 
 .right-btn {
-    right: -20px;
+    right: -30px;
 }
 
-
-.Text_01 {
-    text-align: center;
-    padding-bottom: 1em;
-    font-family: Arial, sans-serif;
-    color: #ffcccc;
-    position: relative;
-    font-size: 30px;
+.right-btn .arrow {
+    transform: rotate(45deg);
+    margin-right: 5px;
 }
 
-.Text_01 h2 {
-    font-size: 2em;
-    font-weight: 200;
-    margin: 0;
-    line-height: 1.2;
-    color: #ff4d4d;
-    position: relative;
-    animation: slideIn 1s ease-out;
+@media (max-width: 768px) {
+    .offers-section {
+        padding: 4rem 1rem;
+    }
 
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .offer-card {
+        flex: 0 0 280px;
+    }
+
+    .scroll-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .left-btn {
+        left: -15px;
+    }
+
+    .right-btn {
+        right: -15px;
+    }
 }
 
-.Text_01 h2 span {
-    font-weight: 300;
-    word-spacing: 3px;
-    line-height: 1.5em;
-    color: rgba(255, 77, 77, 0.8);
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
 
-}
+    50% {
+        background-position: 100% 50%;
+    }
 
-.Text_01 h2:before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: #ff9999;
-    border-radius: 3px;
-}
-
-.offer-card h3 {
-    color: #ffe6e6;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 100;
+    100% {
+        background-position: 0% 50%;
+    }
 }

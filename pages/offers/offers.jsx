@@ -1,7 +1,6 @@
 import React from 'react';
 import './offers.css';
 
-
 function Offers() {
   const scrollRight = () => {
     document.getElementById('scroll-container').scrollBy({
@@ -19,46 +18,41 @@ function Offers() {
 
   return (
     <div className="offers-section">
-      <div className="Text_01">
-        <h2>
+      <div className="section-header">
+        <h2 className="section-title">
           What We <span>Offering</span>
         </h2>
+        <p className="section-subtitle">Explore our curated travel experiences</p>
       </div>
 
       <div className="offers-container">
         <button className="scroll-btn left-btn" onClick={scrollLeft}>
-          &#8592;
+          <span className="arrow"></span>
         </button>
+
         <div id="scroll-container" className="scrollable">
-          <div className="offer-card">
-            <img src="../../public/photos/cultural.jpg" alt="Cultural Tours" />
-
-            <h3>Cultural Tours</h3>
-          </div>
-          <div className="offer-card">
-            <img src="../../public/photos/wildlife.jpg" alt="Wildlife & Safari" />
-
-            <h3>Wildlife & Safari</h3>
-          </div>
-          <div className="offer-card">
-            <img src="../../public/photos/history.jpg" alt="Historical Tours" />
-
-            <h3>Historical Tours</h3>
-          </div>
-          <div className="offer-card">
-            <img src="../../public/photos/LuxuryTours.jpg" alt="Luxury Tours" />
-
-
-            <h3>Luxury Tours</h3>
-          </div>
-          <div className="offer-card">
-            <img src="../../public/photos/adventure.jpg" alt="Luxury Tours" />
-
-            <h3>Adventure Tours</h3>
-          </div>
+          {[
+            { title: 'Cultural Tours', image: 'cultural.jpg' },
+            { title: 'Wildlife & Safari', image: 'wildlife.jpg' },
+            { title: 'Historical Tours', image: 'history.jpg' },
+            { title: 'Luxury Tours', image: 'LuxuryTours.jpg' },
+            { title: 'Adventure Tours', image: 'adventure.jpg' }
+          ].map((offer, index) => (
+            <div className="offer-card" key={index}>
+              <div className="card-image">
+                <img src={`../../public/photos/${offer.image}`} alt={offer.title} />
+                <div className="card-overlay"></div>
+              </div>
+              <div className="card-content">
+                <h3>{offer.title}</h3>
+                <button className="explore-btn">Explore Now</button>
+              </div>
+            </div>
+          ))}
         </div>
+
         <button className="scroll-btn right-btn" onClick={scrollRight}>
-          &#8594;
+          <span className="arrow"></span>
         </button>
       </div>
     </div>
