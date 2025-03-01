@@ -167,6 +167,6 @@ body.login-body {
 
 .login-footer a:hover {
   color: #3AA89E;
-  /* Darker teal on hover */
+
   text-decoration: underline;
 }
