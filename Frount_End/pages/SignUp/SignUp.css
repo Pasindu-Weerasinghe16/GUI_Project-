@@ -19,7 +19,7 @@ body.auth-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url('/photos/signin.jpg');
+  background-image: url('../../public/photos/signin.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
