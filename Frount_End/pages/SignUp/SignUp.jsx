@@ -12,16 +12,16 @@ function SignUp({ onLogin }) {
     }
     axios.post("http://localhost:3000/register", { "username": fullName, "email": email, "password": password }).then(res => {
       if (res.status == 200) {
-        alert("login oik");
+        alert("SignUp successful ");
       } else {
-        alert("go home")
+        alert("SignUp failed");
       }
     });
 
   };
 
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [fullName, setFullName] = useState("");
 

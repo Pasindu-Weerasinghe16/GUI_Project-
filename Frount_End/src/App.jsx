@@ -12,6 +12,7 @@ import CountryDiscription from './CountryDiscription/CountryDiscription'
 import CountryDiscription_SriLanka from './CountryDiscription/Sri_lanka'
 import Cart from './cart/cart'
 import SuccessPage from './SuccessPage/SuccessPage'
+import { AppProvider } from './AppContext'
 
 // import SignUp from '../pages/SingUp/SingUp'
 
@@ -55,18 +56,20 @@ function App() {
 
 
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/packages" element={<Package addToCart={addToCart} />} />
-          <Route path="/PackageCard" element={<PackageCard />} />
-          <Route path="/CountryDiscription" element={<CountryDiscription />} />
-          <Route path="/CountryDiscription_SriLanka" element={<CountryDiscription_SriLanka />} />
-          <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
-          <Route path="/SuccessPage" element={<SuccessPage orderDetails={cartItems} />} />
-        </Routes>
+        <AppProvider>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/SignIn" element={<SignIn />} />
+            <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/packages" element={<Package addToCart={addToCart} />} />
+            <Route path="/PackageCard" element={<PackageCard />} />
+            <Route path="/CountryDiscription" element={<CountryDiscription />} />
+            <Route path="/CountryDiscription_SriLanka" element={<CountryDiscription_SriLanka />} />
+            <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
+            <Route path="/SuccessPage" element={<SuccessPage orderDetails={cartItems} />} />
+          </Routes>
+        </AppProvider>ß
       </BrowserRouter>
 
     </>

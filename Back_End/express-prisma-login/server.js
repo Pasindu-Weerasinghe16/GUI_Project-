@@ -28,8 +28,8 @@ app.post("/register", async (req, res) => {
 
 // Login user
 app.post("/login", async (req, res) => {
-    const { username, password } = req.body;
-    const user = await prisma.user.findUnique({ where: { username } });
+    const { email, password } = req.body;
+    const user = await prisma.user.findUnique({ where: { email } });
 
     if (!user || user.password !== password) {
         return res.status(401).json({ error: "Invalid credentials" });

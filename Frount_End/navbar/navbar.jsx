@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import { FaUserCircle, FaSignOutAlt } from "react-icons/fa";
 import { FiLogIn, FiUserPlus } from "react-icons/fi";
 
+import { useApp } from "../src/AppContext";
+
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Replace with actual auth state
+  const { IsLoggedIn, setIsLoggedIn } = useApp(); // Replace with actual auth state
 
   const handleLogout = () => {
     setIsLoggedIn(false);
@@ -17,6 +19,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="logo">
         <span className="logo-text">TripRex</span>
+
       </div>
 
       <div className="navbar-right">
@@ -68,7 +71,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-right1">
-        {isLoggedIn ? (
+        {IsLoggedIn ? (
           <div className="user-menu">
             <div className="nav-item dropdown">
               <span className="nav-link">
