@@ -27,9 +27,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/" className="nav-link">Home</Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link to="/contact" className="nav-link">Contact</Link>
-          </li>
+          </li> */}
           <li className="dropdown nav-item">
             <span className="nav-link">Destination <RiArrowDropDownLine /></span>
             <ul className="dropdown-menu">
@@ -40,10 +40,10 @@ const Navbar = () => {
                 <Link to="/CountryDiscription_SriLanka" className="dropdown-link">Sri Lanka</Link>
               </li>
               <li className="dropdown-item">
-                <Link to="#" className="dropdown-link">Country-03</Link>
+                <Link to="#" className="dropdown-link">Swizaland</Link>
               </li>
               <li className="dropdown-item">
-                <Link to="#" className="dropdown-link">Country-04</Link>
+                <Link to="#" className="dropdown-link">Moldives</Link>
               </li>
             </ul>
           </li>
@@ -51,16 +51,16 @@ const Navbar = () => {
             <span className="nav-link">Packages <RiArrowDropDownLine /></span>
             <ul className="dropdown-menu">
               <li className="dropdown-item">
-                <Link to="/packages" className="dropdown-link">Country-01</Link>
+                <Link to="/packages" className="dropdown-link">France</Link>
               </li>
               <li className="dropdown-item">
-                <Link to="/PackageCard" className="dropdown-link">Country-02</Link>
+                <Link to="/Packages2" className="dropdown-link">Sri Lanka</Link>
               </li>
               <li className="dropdown-item">
-                <Link to="#" className="dropdown-link">Country-03</Link>
+                <Link to="#" className="dropdown-link">Swizaland</Link>
               </li>
               <li className="dropdown-item">
-                <Link to="#" className="dropdown-link">Country-04</Link>
+                <Link to="#" className="dropdown-link">Moldives</Link>
               </li>
             </ul>
           </li>

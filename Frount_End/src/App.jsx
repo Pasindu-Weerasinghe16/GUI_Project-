@@ -13,6 +13,8 @@ import CountryDiscription_SriLanka from './CountryDiscription/Sri_lanka'
 import Cart from './cart/cart'
 import SuccessPage from './SuccessPage/SuccessPage'
 import { AppProvider } from './AppContext'
+import Packages2 from '../../Frount_End/pages/packages/packages2'
+import AboutUs from './Pages/AboutUs'
 
 // import SignUp from '../pages/SingUp/SingUp'
 
@@ -68,6 +70,9 @@ function App() {
             <Route path="/CountryDiscription_SriLanka" element={<CountryDiscription_SriLanka />} />
             <Route path="/cart" element={<Cart cartItems={cartItems} setCartItems={setCartItems} />} />
             <Route path="/SuccessPage" element={<SuccessPage orderDetails={cartItems} />} />
+            <Route path="/Packages2" element={<Package addToCart={addToCart} />} />
+            <Route path="AboutUs" element={<AboutUs />} />
+
           </Routes>
         </AppProvider>ß
       </BrowserRouter>
