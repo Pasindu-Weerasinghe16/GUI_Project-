@@ -73,7 +73,7 @@ const Navbar = () => {
       <div className="navbar-right1">
         {IsLoggedIn ? (
           <div className="user-menu">
-            <div className="nav-item dropdown">
+            <div className="nav-item dropdown special-dropdown">
               <span className="nav-link">
                 <FaUserCircle className="user-icon" />
                 <RiArrowDropDownLine />
