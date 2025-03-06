@@ -7,12 +7,16 @@ import { FiLogIn, FiUserPlus } from "react-icons/fi";
 
 import { useApp } from "../src/AppContext";
 
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
   const { IsLoggedIn, setIsLoggedIn } = useApp(); // Replace with actual auth state
+  const navigate = useNavigate()
 
   const handleLogout = () => {
     setIsLoggedIn(false);
     // Add actual logout logic here
+    navigate("/SignIn")
   };
 
   return (

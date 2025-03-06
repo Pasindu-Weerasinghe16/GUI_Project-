@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import axios from "axios";
 
+import { useNavigate } from "react-router";
+
 import { useApp } from "../../src/AppContext";
 
 function SignIn({ onLogin }) {
+  const navigate  = useNavigate( );
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { setIsLoggedIn, IsLoggedIn } = useApp();
@@ -16,7 +19,7 @@ function SignIn({ onLogin }) {
       if (response.status === 200) {
         setIsLoggedIn(true);
         alert("Login successful");
-
+        navigate("/")
         // onLogin();
       }
     } catch (error) {
